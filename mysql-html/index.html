@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+</head>
+<body>
+<div class="top">
+    <ul>
+        <li class="btn">1</li>
+        <li class="btn">2</li>
+        <li class="btn">3</li>
+        <li class="btn">4</li>
+        <li class="btn">5</li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        $.ajax({
+            url:"http://localhost:3000/item/list",
+            type:"post",
+            dataType:"json",
+            success:function(e){
+                for(var i in e){
+                    $('.top').append('<div class="box"><sapn>'+e[i].name+'</sapn></div>');
+                    $('ul li').click(function(){
+                        var _this=this.val;
+                    })
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>

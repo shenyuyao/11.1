@@ -1,0 +1,28 @@
+.top{
+    width: 1000px;
+    border: 1px solid #abef98;
+    margin: auto;
+}
+.top ul{
+    width: 1000px;
+    height: 20px;
+}
+.top ul li{
+    width: 40px;
+    height: 20px;
+    background-color: #abef98;
+    list-style: none;
+    float: left;
+    margin-left: 100px;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 20px;
+}
+.box{
+    width: 800px;
+    height: 50px;
+    margin: auto;
+    border: 1px solid #4dc71f;
+    line-height: 50px;
+    text-align: center;
+}
